@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: brown;
+    margin: 0;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    gap: 30px;
+}
+
+header {
+    color: white;
+    font-family: "Comic Sans MS", cursive;
+    font-size: 24px;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+}
+
+#tercero {
+    max-width: 600px;
+    width: 100%;
+}
+
+.info-tercero {
+    background-color: #35f6c8;
+    padding: 30px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    animation: fadeInUp 0.4s ease-out forwards;
+}
+
+.info-tercero h3 {
+    color: black;
+    margin: 0;
+    padding: 15px 0;
+    font-size: 24px;
+}
+
+.info-tercero span {
+    font-size: 16px;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+figure {
+    text-align: center;
+    margin: 20px 0;
+}
+
+img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+figcaption {
+    margin-top: 10px;
+    font-style: italic;
+    color: #2c5530;
+    padding: 15px;
+    background-color: white;
+    border-radius: 6px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+nav a {
+    padding: 12px 24px;
+    background: #2c5530;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background: #1f3a22;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}

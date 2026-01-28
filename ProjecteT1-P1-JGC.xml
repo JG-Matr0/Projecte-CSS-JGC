@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE comics SYSTEM "comics.dtd">
+
+<comics>
+    <!-- Definición de personajes -->
+    <personaje id="p001" nombre="Luke Skywalker"/>
+    <personaje id="p002" nombre="Darth Vader"/>
+    <personaje id="p003" nombre="Yoda"/>
+    <personaje id="p004" nombre="Spider-Man"/>
+    <personaje id="p005" nombre="Green Goblin"/>
+    <personaje id="p006" nombre="Wolverine"/>
+    <personaje id="p007" nombre="Ironman"/>
+    <personaje id="p008" nombre="Thor"/>
+
+    <!-- Cómics -->
+    <comic id="c001" publicado="si">
+        <titulo>La Guerra de las Galaxias</titulo>
+        <autor>George Lucas</autor>
+        <personajes>
+            <personaje ref="p001" rol="protagonista"/>
+            <personaje ref="p002" rol="antagonista"/>
+            <personaje ref="p003" rol="protagonista"/>
+        </personajes>
+        <imagen src="luke.jpg" descripcion="Luke Skywalker"/>
+    </comic>
+
+    <comic id="c002">
+        <titulo>Spider-Man</titulo>
+        <autor>Stan Lee</autor>
+        <personajes>
+            <personaje ref="p004" rol="protagonista"/>
+            <personaje ref="p005" rol="antagonista"/>
+        </personajes>
+        <imagen src="spider.jpg" descripcion="Spider-Man"/>
+    </comic>
+
+    <comic id="c003" publicado="si">
+        <titulo>X-Men</titulo>
+        <autor>Stan Lee</autor>
+        <personajes>
+            <personaje ref="p006" rol="protagonista"/>
+        </personajes>
+        <imagen src="wolverine.jpg" descripcion="Wolverine"/>
+    </comic>
+
+    <comic id="c004">
+        <titulo>Iron Man</titulo>
+        <autor>Stan Lee</autor>
+        <personajes>
+            <personaje ref="p007" rol="protagonista"/>
+        </personajes>
+        <imagen src="iron.jpg" descripcion="Iron Man"/>
+    </comic>
+
+    <comic id="c005">
+        <titulo>Thor</titulo>
+        <autor>Stan Lee</autor>
+        <personajes>
+            <personaje ref="p008" rol="protagonista"/>
+        </personajes>
+        <imagen src="thor.jpg" descripcion="Thor"/>
+    </comic>
+</comics>

@@ -1,0 +1,21 @@
+<!ELEMENT comics (personaje*, comic+)>
+
+        <!ELEMENT personaje EMPTY>
+        <!ATTLIST personaje
+                id ID #IMPLIED
+                ref IDREF #IMPLIED
+                nombre CDATA #IMPLIED
+                rol CDATA #IMPLIED>
+
+        <!ELEMENT comic (titulo, autor, personajes, imagen?)>
+        <!ATTLIST comic
+                id ID #REQUIRED
+                publicado (si | no) "no">
+
+        <!ELEMENT titulo (#PCDATA)>
+        <!ELEMENT autor (#PCDATA)>
+        <!ELEMENT personajes (personaje+)>
+        <!ELEMENT imagen EMPTY>
+        <!ATTLIST imagen
+                src CDATA #REQUIRED
+                descripcion CDATA #IMPLIED>
