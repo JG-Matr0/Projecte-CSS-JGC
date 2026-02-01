@@ -1,89 +1,148 @@
-header {
-    color: white;
-    font-family: "Comic Sans MS";
-    font-size: 50px;
-    min-width: 30px;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-nav {
-    background-color: black;
-}
-
-.navbar-brand img {
-    width: 10vw;
-    height: 10vh;
-}
-
-.navbar-toggler {
-    margin-left: 300px;
-}
-
-
 body {
-    font-family: Arial, sans-seriff;
-    background-color: brown;
+    padding-top: 0;
     margin: 0;
-    padding: 20px;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    min-height: 100vh;
-    gap: 30px;
+    box-sizing: border-box;
+    background-color: #0e0e0f;
 }
 
+/* TÍTULO SOBRE NAVBAR */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1100;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    padding: 15px 0;
+    margin: 0;
+}
+
+/* NAVBAR */
+.navbar {
+    position: sticky;
+    top: 50px; /* debajo del título */
+    z-index: 1000;
+    background-color: #ab0d0d !important;
+    margin-bottom: 30px;
+    padding: 0.5rem 0.5rem;
+}
+
+/* Contenedor interno acortado y centrado */
+.navbar .container-fluid {
+    max-width: 900px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* LOGO responsive */
+.navbar-brand img {
+    height: 35px;
+    border-radius: 50%;
+}
+
+/* Links */
+.nav-link {
+    color: #ffffff !important;
+    font-weight: bold;
+    padding: 10px 15px !important;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: white !important;
+    background: #28d4a5 !important;
+    transform: translateX(5px);
+}
+
+/* BOTÓN HAMBURGUESA */
+.navbar-toggler {
+    border: none;
+    background: none;
+    color: white;
+}
+
+/* Hacer navbar horizontal en pantallas grandes */
+@media (min-width: 992px) {
+    .navbar-nav {
+        justify-content: center;
+        width: 100%;
+        flex-direction: row;
+    }
+    .navbar-nav .nav-link {
+        border: none;
+        color: white;
+        margin-left: 15px;
+        padding: 8px 12px !important;
+    }
+    .collapse.navbar-collapse {
+        display: flex !important;
+        flex-basis: auto;
+    }
+}
+
+/* GRID PRINCIPAL */
 main {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
     padding: 0 10px;
 }
 
+/* TARGETA */
 .targeta {
     background-color: #35f6c8;
-    padding: 30px;
+    padding: 20px;
     border-radius: 12px;
-    height: 80vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
     animation: fadeInUp 0.4s ease-out forwards;
 }
 
+/* Ajuste de h3 dentro de targeta */
 .targeta h3 {
     margin: 0;
-    padding: 15px 0;
+    padding: 10px 0;
     color: black;
-    font-size: 22px;
+    font-size: 20px;
+    text-align: center;
 }
 
+/* Lista dentro de targeta */
 .targeta ul {
     list-style: none;
     padding: 0;
-    margin: 10px 0;
+    margin: 5px 0;
     width: 100%;
 }
 
+/* Items de la lista */
 .targeta li {
-    margin: 8px 0;
-    padding: 8px;
+    margin: 5px 0;
+    padding: 6px;
     background-color: #2c5530;
     border-radius: 6px;
     color: white;
 }
 
+/* Botón dentro de targeta */
 .targeta a {
     display: inline-block;
-    padding: 12px 24px;
+    padding: 10px 20px;
     background: #2c5530;
     color: white;
     text-decoration: none;
     border-radius: 25px;
     font-weight: bold;
     margin-top: 10px;
+    transition: all 0.3s ease;
 }
 
 .targeta a:hover {
@@ -92,17 +151,20 @@ main {
     box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
-img {
-    max-width: 300px;
-    min-width: 100px;
-    height: 350px;
+/* Imagen dentro de targeta */
+.targeta img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
     border-radius: 8px;
+    object-fit: cover;
 }
 
-img:hover {
+.targeta img:hover {
     transform: scale(1.05);
 }
 
+/* Footer */
 footer {
     text-align: center;
     font-style: oblique;
@@ -114,7 +176,7 @@ footer {
     align-items: center;
 }
 
-
+/* Animación */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -125,4 +187,3 @@ footer {
         transform: translateY(0);
     }
 }
-

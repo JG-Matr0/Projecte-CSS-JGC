@@ -1,0 +1,134 @@
+html, body {
+    background-color: #807977; /* marrón */
+    color: white;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Opcional: si usas container de Bootstrap, quitar fondo blanco */
+.container, .container-fluid {
+    background-color: transparent;
+}
+
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1100;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: black; /* fondo negro */
+    padding: 15px 0;
+    margin: 0;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+    position: sticky;
+    z-index: 1000;
+    background-color: #ab0d0d !important; /* rojo */
+    margin-bottom: 10px;
+    padding: 0.5rem 0.5rem;
+}
+
+/* Contenedor centrado y acortado */
+.navbar .container-fluid {
+    max-width: 900px; /* ancho máximo */
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* LOGO */
+.navbar-brand img {
+    height: 35px;
+    border-radius: 50%;
+}
+
+/* LINKS */
+.nav-link {
+    color: #ffffff !important;
+    font-weight: bold;
+    padding: 10px 15px !important;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: white !important;
+    background: #28d4a5 !important;
+    transform: translateX(5px);
+}
+
+/* BOTÓN HAMBURGUESA */
+.navbar-toggler {
+    border: none;
+    background: none;
+    color: white;
+}
+
+/* ================= RESPONSIVE NAVBAR ================= */
+@media (min-width: 992px) {
+    .navbar-nav {
+        justify-content: center; /* centra los links */
+        width: 100%;
+        flex-direction: row;
+    }
+    .navbar-nav .nav-link {
+        border: none;
+        color: white;
+        margin-left: 15px;
+        padding: 8px 12px !important;
+    }
+    .collapse.navbar-collapse {
+        display: flex !important; /* siempre visible en desktop */
+        flex-basis: auto;
+    }
+}
+
+/* ================= CARRUSEL ================= */
+#carruselFotos {
+    max-width: 800px; /* centrado y ancho máximo */
+    margin: 0 auto;
+}
+
+#carruselFotos .carousel-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+#carruselFotos .carousel-caption h5 {
+    background-color: rgba(0,0,0,0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+}
+
+#carruselFotos .carousel-indicators {
+    bottom: -30px;
+}
+
+#carruselFotos .carousel-control-prev,
+#carruselFotos .carousel-control-next {
+    width: 5%;
+}
+
+/* Responsive en móviles */
+@media (max-width: 576px) {
+    #carruselFotos {
+        max-width: 95%;
+    }
+    #carruselFotos .carousel-caption h5 {
+        font-size: 0.8rem;
+        padding: 3px 6px;
+    }
+}
