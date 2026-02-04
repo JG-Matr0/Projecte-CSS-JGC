@@ -3,6 +3,85 @@ body {
     margin: 0;
     box-sizing: border-box;
     background-color: #0e0e0f;
+<<<<<<< HEAD
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1100;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    padding: 15px 0;
+    margin: 0;
+}
+
+.navbar {
+    position: sticky;
+    top: 50px;
+    z-index: 1000;
+    background-color: #ab0d0d !important;
+    margin-bottom: 30px;
+    padding: 0.5rem 0.5rem;
+}
+
+.navbar .container-fluid {
+    max-width: 900px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-brand img {
+    height: 35px;
+    border-radius: 50%;
+}
+
+.nav-link {
+    color: #ffffff !important;
+    font-weight: bold;
+    padding: 10px 15px !important;
+    border-bottom: 1px solid gray;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: white !important;
+    background: #28d4a5 !important;
+    transform: translateX(5px);
+}
+
+.navbar-toggler {
+    border: none;
+    background: none;
+    color: white;
+}
+
+@media (min-width: 992px) {
+    .navbar-nav {
+        justify-content: center;
+        width: 100%;
+        flex-direction: row;
+    }
+    .navbar-nav .nav-link {
+        border: none;
+        color: white;
+        margin-left: 15px;
+        padding: 8px 12px !important;
+    }
+    .collapse.navbar-collapse {
+        display: flex !important;
+        flex-basis: auto;
+    }
+}
+
+
+=======
 }
 
 /* TÍTULO SOBRE NAVBAR */
@@ -87,6 +166,7 @@ header {
 }
 
 /* GRID PRINCIPAL */
+>>>>>>> origin/main
 main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -94,7 +174,11 @@ main {
     padding: 0 10px;
 }
 
+<<<<<<< HEAD
+
+=======
 /* TARGETA */
+>>>>>>> origin/main
 .targeta {
     background-color: #35f6c8;
     padding: 20px;
@@ -115,7 +199,11 @@ main {
     text-align: center;
 }
 
+<<<<<<< HEAD
+
+=======
 /* Lista dentro de targeta */
+>>>>>>> origin/main
 .targeta ul {
     list-style: none;
     padding: 0;
@@ -123,7 +211,11 @@ main {
     width: 100%;
 }
 
+<<<<<<< HEAD
+
+=======
 /* Items de la lista */
+>>>>>>> origin/main
 .targeta li {
     margin: 5px 0;
     padding: 6px;
@@ -132,7 +224,11 @@ main {
     color: white;
 }
 
+<<<<<<< HEAD
+
+=======
 /* Botón dentro de targeta */
+>>>>>>> origin/main
 .targeta a {
     display: inline-block;
     padding: 10px 20px;
@@ -151,7 +247,10 @@ main {
     box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
+<<<<<<< HEAD
+=======
 /* Imagen dentro de targeta */
+>>>>>>> origin/main
 .targeta img {
     width: 100%;
     max-width: 280px;
@@ -176,7 +275,10 @@ footer {
     align-items: center;
 }
 
+<<<<<<< HEAD
+=======
 /* Animación */
+>>>>>>> origin/main
 @keyframes fadeInUp {
     from {
         opacity: 0;
