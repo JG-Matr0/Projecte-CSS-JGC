@@ -11,14 +11,82 @@ body {
 }
 
 header {
-    margin: 20px;
-    color: #441b09;
-    font-family: "Comic Sans MS";
-    font-size: 24px;
+    position: sticky;
+    top: 0;
+    z-index: 1100;
     text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    padding: 15px 0;
+    margin: 0;
+}
+
+.navbar {
+    position: sticky;
+    z-index: 700;
+    background-color: #ab0d0d;
+    margin-bottom: 10px;
+    padding: 0.5rem 0.5rem;
+}
+
+.navbar .container-fluid {
+    max-width: 900px;
+    margin: 0 auto;
+    width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-brand img {
+    height: 70px;
+    width: 70px;
+    border-radius: 20%;
+}
+
+.nav-link {
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-bottom: 1px solid gray;
+    transition: all 0.3s ease;
+}
+
+.nav-item {
+    color: white;
+}
+
+.nav-link:hover {
+    color: white;
+    background: #28d4a5 !important;
+    transform: translateX(5px);
+}
+
+.navbar-toggler {
+    border: none;
+    background: none;
+    color: white;
+}
+
+@media (min-width: 992px) {
+    .navbar-nav {
+        justify-content: center;
+        width: 100%;
+        flex-direction: row;
+    }
+    .navbar-nav .nav-link {
+        border: none;
+        color: white !important;
+        margin-left: 15px;
+        padding: 8px 12px !important;
+    }
+
+    .collapse.navbar-collapse {
+        display: flex !important;
+        flex-basis: auto;
+    }
 }
 
 #cuarto {
@@ -105,6 +173,14 @@ nav a {
 nav a:hover {
     background: #333333;
     transform: translateY(-2px);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    margin: 40px;
 }
 
 @keyframes fadeInUp {
